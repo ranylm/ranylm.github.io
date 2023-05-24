@@ -47,6 +47,34 @@ function App() {
           >
             {/* Project Section */}
             <div className="w-10/12 bg-neutral-100 m-8 flex flex-row rounded-lg shadow-2xl">
+              <img src="space.png" className="w-72 m-4" />
+              <div className="w-full p-4 flex flex-col justify-between">
+                <div>
+                  <h1>Warehouse Management Service</h1>
+                  <p>
+                    This is a resource management system allowing for Users and
+                    Organizations to manage inventory. The app handles resource
+                    access based on the User and their membership to a
+                    organization and ownership of warehouses.
+                  </p>
+                </div>
+                <div className="flex flex-row">
+                  <a
+                    href="https://github.com/ranylm/MOD1-Dungeon-Crawler"
+                    className="mx-2"
+                  >
+                    Github
+                  </a>
+                  <a
+                    href="https://ranylm.github.io/MOD1-Dungeon-Crawler/"
+                    className="mx-2"
+                  >
+                    Live
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="w-10/12 bg-neutral-100 m-8 flex flex-row rounded-lg shadow-2xl">
               <img src="dungeon.png" className="w-72 m-4" />
               <div className="w-full p-4 flex flex-col justify-between">
                 <div>
@@ -76,12 +104,31 @@ function App() {
             </div>
             <div className="w-10/12 bg-neutral-100 m-8 flex flex-row rounded-lg shadow-2xl">
               <img src="news.png" className="w-72 m-4" />
-              <div className="w-full p-4"></div>
+              <div className="w-full p-4 flex flex-col justify-between">
+                <div>
+                  <h1>News Site</h1>
+                  <p>
+                    This project agregates news articals from several external
+                    Apis about game news and displays it.
+                  </p>
+                </div>
+                <div className="flex flex-row">
+                  <a
+                    href="https://github.com/ranylm/Video-Game-Data-Dashboard"
+                    className="mx-2"
+                  >
+                    Github
+                  </a>
+                  <a
+                    href="https://admirable-arithmetic-47f34c.netlify.app/"
+                    className="mx-2"
+                  >
+                    Live
+                  </a>
+                </div>
+              </div>
             </div>
-            <div className="w-10/12 bg-neutral-100 m-8 flex flex-row rounded-lg shadow-2xl">
-              <img src="space.png" className="w-72 m-4" />
-              <div className="w-full p-4"></div>
-            </div>
+
             {/* Info Section */}
           </section>
           <section

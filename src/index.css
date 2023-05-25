@@ -39,3 +39,8 @@ a {
   font-size: 1.25rem;
   letter-spacing: 0.05em;
 }
+
+#top {
+  background-image: url("topbg.jpg"), url("topbg-lowres.jpg");
+  background-size: cover, cover;
+}

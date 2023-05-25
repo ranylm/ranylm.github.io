@@ -4,13 +4,13 @@ import "./App.css";
 function App() {
   return (
     <>
-      <div className="flex flex-row bg-red-700 w-full">
+      <div className="flex flex-col lg:flex-row w-full">
         {/* Nav Bar */}
-        <div className="sticky top-0 z-50 h-screen bg-gradient-to-br from-slate-900 to-slate-800 w-1/4 ">
-          <div className="flex flex-col items-center h-screen">
+        <div className="lg:sticky top-0 z-50 h-auto lg:h-screen bg-gradient-to-br from-slate-900 to-slate-800 w-full lg:w-1/4 ">
+          <div className="flex flex-col items-center h-full lg:h-screen">
             <a
               href="#project"
-              className="block  text-white text-3xl font-mono tracking-wide mt-96"
+              className="block  text-white text-3xl font-mono tracking-wide lg:mt-96"
             ></a>
             <a
               href="#projects"
@@ -46,22 +46,35 @@ function App() {
             </a>
           </div>
         </div>
-        <div className="flex flex-col bg-blue-400 w-3/4">
+        <div className="flex flex-col lg:w-3/4">
           <section
             id="top"
-            className="w-full bg-green-400 h-[50vh] flex flex-col items-center justify-center"
+            className="w-full bg-gray-900 h-[50vh] flex flex-col items-center justify-center"
           >
-            <h1 className="text-6xl font-sans font-extrabold text-white tracking-wider">
-              Hi My Name Is Anthony!
+            <h1 className="text-6xl font-sans font-extrabold text-white tracking-wider w-10/12 lg:w-full text-center opacity-90">
+              Hi My Name Is
             </h1>
-            <h2 className="text-4xl font-sans font-extrabold text-white tracking-wider">
+            <span className="text-6xl font-sans font-extrabold text-white tracking-widest w-10/12 lg:w-full text-center opacity-100">
+              Anthony
+            </span>
+            <h2 className="text-3xl font-sans font-extrabold text-white tracking-wider opacity-80 my-3">
               Theres More Below
             </h2>
           </section>
+          <div className="text-white text-center lg:text-right bg-transparent h-0 z-50 relative -top-8 opacity-20">
+            Photo by{" "}
+            <a href="https://unsplash.com/@floriankrumm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              Florian Krumm
+            </a>{" "}
+            on{" "}
+            <a href="https://unsplash.com/backgrounds/phone/keyboard?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              Unsplash
+            </a>
+          </div>
 
           <section
             id="project"
-            className="w-full bg-green-500 h-[200vh]] flex flex-col items-center"
+            className="w-full bg-gray-900 h-[200vh]] flex flex-col items-center"
           >
             {/* Project Section */}
             <div
@@ -216,7 +229,7 @@ function App() {
           </section>
           <section
             id="info"
-            className="w-full bg-green-600 h-28 flex flex-row items-center justify-evenly"
+            className="w-full bg-gradient-to-br from-slate-900 to-slate-800 h-28 flex flex-row items-center justify-evenly text-white"
           >
             <a href="https://github.com/ranylm/" className="mx-2">
               Github

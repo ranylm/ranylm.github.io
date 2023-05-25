@@ -5,24 +5,42 @@ function App() {
   return (
     <>
       <div className="flex flex-row bg-red-700 w-full">
-        <div className="sticky top-0 z-50 h-screen bg-gradient-to-r from-violet-900 to-violet-700 w-1/4 ">
+        {/* Nav Bar */}
+        <div className="sticky top-0 z-50 h-screen bg-gradient-to-br from-slate-900 to-slate-800 w-1/4 ">
           <div className="flex flex-col items-center h-screen">
             <a
               href="#project"
-              className="block  text-white text-3xl font-mono tracking-wide mt-96 
-            "
+              className="block  text-white text-3xl font-mono tracking-wide mt-96"
             ></a>
             <a
-              href="#project"
-              className="block text-white text-3xl font-mono tracking-wide m-4 
-            "
+              href="#projects"
+              className="block text-white text-3xl font-mono tracking-wide m-4 uppercase"
             >
-              Project
+              Projects
+            </a>
+            {/* PROJECT AREA */}
+            <a
+              href="#warehouse"
+              className="block text-xl font-mono tracking-wide mx-2 my-1 text-neutral-200"
+            >
+              Warehouse App
             </a>
             <a
+              href="#dungeoncrawler"
+              className="block text-xl font-mono tracking-wide mx-2 my-1 text-neutral-200"
+            >
+              Dungeon Crawler
+            </a>
+            <a
+              href="#news"
+              className="block text-xl font-mono tracking-wide mx-2 my-1 text-neutral-200"
+            >
+              News and Deals
+            </a>
+            {/* PROJECT AREA END */}
+            <a
               href="#info"
-              className="text-white text-3xl font-mono tracking-wide m-4
-            "
+              className="text-white text-3xl font-mono tracking-wide m-4 uppercase"
             >
               Info
             </a>
@@ -43,30 +61,55 @@ function App() {
 
           <section
             id="project"
-            className="w-full bg-green-500 h-screen flex flex-col items-center"
+            className="w-full bg-green-500 h-[200vh]] flex flex-col items-center"
           >
             {/* Project Section */}
-            <div className="w-10/12 bg-neutral-100 m-8 flex flex-row rounded-lg shadow-2xl">
-              <img src="space.png" className="w-72 m-4" />
+            <div
+              id="warehouse"
+              className="w-10/12 bg-neutral-100 m-8 flex flex-col lg:flex-row rounded-lg shadow-2xl border border-neutral-400  hover:bg-neutral-200 transition-color duration-300"
+            >
+              <img
+                src="warehouse.png"
+                className="w-full lg:w-72 p-4 lg:p-4 rounded-3xl"
+              />
               <div className="w-full p-4 flex flex-col justify-between">
                 <div>
-                  <h1>Warehouse Management Service</h1>
-                  <p>
+                  <h1 className="text-xl font-bold text-gray-600 tracking-wider">
+                    Warehouse Management Service
+                  </h1>
+                  <p className="p-1 text-gray-800 tracking-wide">
                     This is a resource management system allowing for Users and
                     Organizations to manage inventory. The app handles resource
                     access based on the User and their membership to a
                     organization and ownership of warehouses.
                   </p>
                 </div>
+                <div className="flex flex-row w-full flex-wrap">
+                  <span className="bg-sky-500 rounded-3xl box-border h-5 px-3 tracking-widest font-bold text-xs font-sans text-white leading-5 m-1">
+                    REACT
+                  </span>
+                  <span className="bg-sky-500 rounded-3xl box-border h-5 px-3 tracking-widest font-bold text-xs font-sans text-white leading-5 m-1">
+                    TYPESCRIPT
+                  </span>
+                  <span className="bg-sky-500 rounded-3xl box-border h-5 px-3 tracking-widest font-bold text-xs font-sans text-white leading-5 m-1">
+                    NODEJS
+                  </span>
+                  <span className="bg-sky-500 rounded-3xl box-border h-5 px-3 tracking-widest font-bold text-xs font-sans text-white leading-5 m-1">
+                    EXPRESS
+                  </span>
+                  <span className="bg-sky-500 rounded-3xl box-border h-5 px-3 tracking-widest font-bold text-xs font-sans text-white leading-5 m-1">
+                    MONGODB
+                  </span>
+                </div>
                 <div className="flex flex-row">
                   <a
-                    href="https://github.com/ranylm/MOD1-Dungeon-Crawler"
+                    href="https://github.com/ranylm/MOD3-Project-Pending"
                     className="mx-2"
                   >
                     Github
                   </a>
                   <a
-                    href="https://ranylm.github.io/MOD1-Dungeon-Crawler/"
+                    href="https://mod3-warehouses.onrender.com/"
                     className="mx-2"
                   >
                     Live
@@ -74,12 +117,21 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="w-10/12 bg-neutral-100 m-8 flex flex-row rounded-lg shadow-2xl">
-              <img src="dungeon.png" className="w-72 m-4" />
+            {/* DUNGEON SECTION */}
+            <div
+              id="dungeoncrawler"
+              className="w-10/12 bg-neutral-100 m-8 flex flex-col lg:flex-row rounded-lg shadow-2xl border border-neutral-400  hover:bg-neutral-200 transition-color duration-300"
+            >
+              <img
+                src="dungeon.png"
+                className="w-full lg:w-72 p-4 lg:p-4 rounded-3xl"
+              />
               <div className="w-full p-4 flex flex-col justify-between">
                 <div>
-                  <h1>Dungeon Crawler</h1>
-                  <p>
+                  <h1 className="text-xl font-bold text-gray-600 tracking-wider">
+                    Dungeon Crawler
+                  </h1>
+                  <p className="p-1 text-gray-800 tracking-wide">
                     This project implements a dungeon crawler with randomized
                     level generation with combat mechanics and item based
                     progression. Your goal is to eliminate all enemies on the
@@ -87,6 +139,14 @@ function App() {
                   </p>
                 </div>
                 <div className="flex flex-row">
+                  <span className="bg-sky-500 rounded-3xl box-border h-5 px-3 tracking-widest font-bold text-xs font-sans text-white leading-5 m-1">
+                    CANVAS
+                  </span>
+                  <span className="bg-sky-500 rounded-3xl box-border h-5 px-3 tracking-widest font-bold text-xs font-sans text-white leading-5 m-1">
+                    HTML/CSS/JS
+                  </span>
+                </div>
+                <div className="flex flex-row">
                   <a
                     href="https://github.com/ranylm/MOD1-Dungeon-Crawler"
                     className="mx-2"
@@ -102,15 +162,37 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="w-10/12 bg-neutral-100 m-8 flex flex-row rounded-lg shadow-2xl">
-              <img src="news.png" className="w-72 m-4" />
+            {/* NEWS AGGREGATOR */}
+            <div
+              id="news"
+              className="w-10/12 bg-neutral-100 m-8 flex flex-col lg:flex-row rounded-lg shadow-2xl border border-neutral-400 hover:bg-neutral-200 transition-color duration-300"
+            >
+              <img
+                src="news.png"
+                className="w-full lg:w-72 p-4 lg:p-4 rounded-3xl"
+              />
               <div className="w-full p-4 flex flex-col justify-between">
                 <div>
-                  <h1>News Site</h1>
-                  <p>
+                  <h1 className="text-xl font-bold text-gray-600 tracking-wider">
+                    News Site
+                  </h1>
+                  <p className="p-1 text-gray-800 tracking-wide">
                     This project agregates news articals from several external
-                    Apis about game news and displays it.
+                    Apis about game news and displays it. Has search
+                    functionality for game discounts and saving games into a
+                    list utilizing redux.
                   </p>
+                </div>
+                <div className="flex flex-row">
+                  <span className="bg-sky-500 rounded-3xl box-border h-5 px-3 tracking-widest font-bold text-xs font-sans text-white leading-5 m-1">
+                    REACT
+                  </span>
+                  <span className="bg-sky-500 rounded-3xl box-border h-5 px-3 tracking-widest font-bold text-xs font-sans text-white leading-5 m-1">
+                    TYPESCRIPT
+                  </span>
+                  <span className="bg-sky-500 rounded-3xl box-border h-5 px-3 tracking-widest font-bold text-xs font-sans text-white leading-5 m-1">
+                    REDUX
+                  </span>
                 </div>
                 <div className="flex flex-row">
                   <a
@@ -128,6 +210,7 @@ function App() {
                 </div>
               </div>
             </div>
+            {/* TEST DATA */}
 
             {/* Info Section */}
           </section>

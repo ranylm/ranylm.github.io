@@ -18,10 +18,9 @@ body {
 }
 
 #project {
-  background: linear-gradient(-45deg, #882bd4, #4024dd, #23a6d5, #23d5ab);
+  background: linear-gradient(-45deg, #ebebeb, #c8c8c8, #fff9ec, #23d5ab);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
-  height: 100vh;
 }
 
 @keyframes gradient {

@@ -39,8 +39,8 @@ a {
   font-size: 1.25rem;
   letter-spacing: 0.05em;
 }
-
+/* Move to assets on build manually */
 #top {
-  background-image: url("topbg.jpg"), url("topbg-lowres.jpg");
+  background-image: url("/topbg-lowres.jpg"), url("/topbg.jpg");
   background-size: cover, cover;
 }
